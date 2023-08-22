@@ -19,32 +19,32 @@ export const ripple =function ($rippleElem)
     $ripple.classList.add("ripple");
     this.appendChild($ripple);
 
-    // const removeRipple = () =>{
-    //     $ripple.animate({
-    //         opacity: 0},
-    //         { fill: "forward", duration: 200});
+    const removeRipple = () =>{
+        $ripple.animate({
+            opacity: 0},
+            { fill: "forward", duration: 200});
     
 
-    // setTimeout(()=> {
-    //     $ripple.remove();
-    //     },1000);
+    setTimeout(()=> {
+        $ripple.remove();
+        },1000);
 
-    // }
-    // this.addEventListener("pointerUp", removeRipple);
-    // this.addEventListener("pointerLeave", removeRipple);
+    }
+    this.addEventListener("pointerUp", removeRipple);
+    this.addEventListener("pointerLeave", removeRipple);
 
-    // const /** *{Boolean} */ isNotIconButton = !this.classList.contains("icon-btn");
+    const /** *{Boolean} */ isNotIconButton = !this.classList.contains("icon-btn");
 
-    // if(isNotIconButton)
-    // {
-    //     const /**{Boolean} */ rippleSize = Math.max(this.clientWidth, this.clientHeight);
+    if(isNotIconButton)
+    {
+        const /**{Boolean} */ rippleSize = Math.max(this.clientWidth, this.clientHeight);
 
-    //     $ripple.style.top = `${e.layerY}px`;
-    //     $ripple.style.left = `${e.layerX}px`;
-    //     $ripple.style.width = `${rippleSize}px`;
-    //     $ripple.style.height = `${rippleSize}px`;
+        $ripple.style.top = `${e.layerY}px`;
+        $ripple.style.left = `${e.layerX}px`;
+        $ripple.style.width = `${rippleSize}px`;
+        $ripple.style.height = `${rippleSize}px`;
     
-    //     }
+        }
 
    });
 
