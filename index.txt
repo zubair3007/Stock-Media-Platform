@@ -261,3 +261,5 @@ Featured collections
 #---------- FAVORITE PAGE ----------#
 
 Favorites - Pixstock
+
+--------------------------------------------------------
