@@ -6,7 +6,7 @@
 
 import { urlEncode } from "./utils/urlEncode.js";
 
-const /**{string} */ API_KEY = "Your api key";
+const /**{string} */ API_KEY = "jY6UsB5lbFU0g0w4EKTpxzfAdXDz9icitS4tWLm75NIGKxOlNyluVSrC";
 
 const /** {Function} */ headers = new Headers();
 
@@ -30,10 +30,11 @@ const fetchData = async function (url, successCallback)
     
 }
 
+
 let /**{string} */ requestUrl ="";
 
 const /**{object} */ root ={
-    default: "https://api.pexels.com/v1",
+    default: "https://api.pexels.com/v1/",
     videos: "https://api.pexels.com/videos/"
 }
 
