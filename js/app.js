@@ -19,6 +19,8 @@ client.photos.curated({ page: 1, per_page: 20 }, data =>{
    
     $photoGrid.innerHTML="";
 
+    const /**{Object} */ $photoGrid = gridInit($photoGrid);
+
     data.photos.forEach(photo => {
         const /* {NodeElement} */ $photoCard = photoCard(photo);
 
