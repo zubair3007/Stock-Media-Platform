@@ -503,7 +503,7 @@ button:disabled {
   gap: var(--column-gap);
 
   /* For Javascript */
-/* Overflow: hidden; */
+Overflow: hidden;
 
 }
 
@@ -534,6 +534,7 @@ overlay-btn {
 
 }
 
+
 .skeleton {
 
   background-color: var(--surface-container-highest);
@@ -546,6 +547,21 @@ overlay-btn {
   0% { opacity: 0.5;}
   100% { opacity: 1 ;}
 }
+
+.card-badge {
+  position: absolute;
+  top:16px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+  display:grid;
+  place-content:center;
+  background-color: var(--light-secondary-container);
+  color: var(--light-on-secondary-container);
+  border-radius: var(--radius-small);
+}
+
+.card-badge .material-symbols-outlined { font-size: 1.8rem; }
 
 
 
@@ -901,6 +917,8 @@ overlay-btn {
   --state-layer-bg: var(--light-inverse-primary);
 }
 
+.card.video { background-color: var(--surface-container-highest);}
+
 /**
  * Menu
  */
@@ -1168,7 +1186,9 @@ overlay-btn {
   #CURATED PHOTOS & POPULAR VIDEO
 \*-----------------------------------*/
 
-
+:where(.featured-photo, .popular-videos) .column {
+  margin-block-end: -800px;
+}
 
 
 
