@@ -521,7 +521,7 @@ Overflow: hidden;
 
 }
 
-overlay-btn {
+.overlay-btn {
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -1186,7 +1186,7 @@ overlay-btn {
   #CURATED PHOTOS & POPULAR VIDEO
 \*-----------------------------------*/
 
-:where(.featured-photo, .popular-videos) .column {
+:where(.featured-photo, .popular-video) .column {
   margin-block-end: -800px;
 }
 
