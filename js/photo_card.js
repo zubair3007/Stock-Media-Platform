@@ -45,7 +45,7 @@ export const photoCard = photo => {
             <span class="material-symbols-outlined" aria-hidden="true">
              favorite</span>
                         
-        <div class="state-layer"></div>
+              <div class="state-layer"></div>
                         
          </button>
          </div>

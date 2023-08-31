@@ -555,10 +555,10 @@ Overflow: hidden;
   width: 24px;
   height: 24px;
   display:grid;
-  place-content:center;
+  place-items:center;
   background-color: var(--light-secondary-container);
   color: var(--light-on-secondary-container);
-  border-radius: var(--radius-small);
+border-radius: var(--radius-small);
 }
 
 .card-badge .material-symbols-outlined { font-size: 1.8rem; }

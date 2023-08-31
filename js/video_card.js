@@ -6,6 +6,7 @@
 
 import {ripple } from "./utils/ripple.js";
 import { favorite } from "./favorite.js";
+import { hoverOnPlay} from "./utils/hoverOnPlay.js";
 
 /***
  * create Video card
@@ -29,7 +30,8 @@ export const videoCard = video => {
    const { file_type, link} = sdVideo;
 
    const /**{NodeElement} */ $card = document.createElement("div");
-   $card.classList.add("Card", "grid-item", "video");
+   $card.classList.add("card", "grid-item", "video");
+   
 
    const /** {Object} */ favoriteObj = JSON.parse(window.localStorage.getItem("favorite"));
 
@@ -40,18 +42,17 @@ export const videoCard = video => {
         </video>
     </div>
     <div class="card-content">
-       <button class="icon-btn small ${favoriteObj.photos[id] ? "active" : ""}" aria-label="Add to favorite" data-ripple data-favorite-btn>
+       <button class="icon-btn small ${favoriteObj.videos[id] ? "active" : ""}" aria-label="Add to favorite" data-ripple data-favorite-btn>
             <span class="material-symbols-outlined" aria-hidden="true">
              favorite</span>
                         
         <div class="state-layer"></div>
                         
          </button>
+
          </div>
-             <span class="card-badge">
-            <span class="material-symbols-outlined" aria-hidden="true">
-             play_arrow
-            </span>
+             <span class="card-badge" data-card-badge>
+            <span class="material-symbols-outlined" aria-hidden="true">play_arrow</span>
             </span>
 
         <a href="${root}/pages/videos/video_detail.html?id=${id}" class="state-layer"></a>
@@ -62,7 +63,7 @@ export const videoCard = video => {
     $rippleElems.forEach($rippleElem => ripple($rippleElem));
 
     const /** {NodeElement} */ $favoriteBtn = $card.querySelector("[data-favorite-btn]");
-    favorite($favoriteBtn, "photos", id);
+    favorite($favoriteBtn, "videos", id);
 
     // hoverOnPlay($card);
 
