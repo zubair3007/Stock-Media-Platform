@@ -65,7 +65,7 @@ export const videoCard = video => {
     const /** {NodeElement} */ $favoriteBtn = $card.querySelector("[data-favorite-btn]");
     favorite($favoriteBtn, "videos", id);
 
-    // hoverOnPlay($card);
+    hoverOnPlay($card);
 
     return $card;
 
