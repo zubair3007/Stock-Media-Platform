@@ -76,7 +76,7 @@ export const /*{object} */ client ={
         }
     },
 
-      Videos: {
+      videos: {
 
         /**
          * 

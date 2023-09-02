@@ -740,12 +740,10 @@ border-radius: var(--radius-small);
   display: grid;
   place-items:center;
  }
-
+/* 
  .trailing-icon {
   color:  var(--on-primary);
-
- 
- }
+ } */
 
     .split-btn .material-symbols-outlined {
       font-size: 1.8rem;

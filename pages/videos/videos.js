@@ -56,23 +56,23 @@ const /**{NodeElement} */ $filterBar = document.querySelector("[data-filter-bar]
 
 
  /**
-  * Render all photos
+  * Render all videos
   * @param {Number} currentPage current page number
   */
 
  const renderVideos = function (currentPage) {
 
-    client.Videos[searchObj ? "search" : "popular" ]({ ...searchObj, per_page:
+    client.videos[searchObj ? "search" : "popular" ]({ ...searchObj, per_page:
     perPage, page: currentPage }, data => {
 
        
         totalPage = Math.ceil(data.total_results / perPage);
         console.log(totalPage);
 
-        data.videos.forEach(photo => {
+        data.videos.forEach(video => {
             const /**{NodeElement} */ $videoCard = videoCard(video);
 
-            updateGrid($photoCard, photoGrid.columnsHeight, photoGrid.$columns);
+            updateGrid($videoCard, videoGrid.columnsHeight, videoGrid.$columns);
         });
 
         //When videos loaded

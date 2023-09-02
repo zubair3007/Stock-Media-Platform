@@ -41,7 +41,7 @@ client.photos.curated({ page: 1, per_page: 20 }, data =>{
 const /**{NodeElement} */ $videoGrid =  document.querySelector("[data-video-grid]");
 
 $videoGrid.innerHTML = `<div class="skeleton"></div>`.repeat(18);
-client.Videos.popular({per_page: 20}, data =>{
+client.videos.popular({per_page: 20}, data =>{
     $videoGrid.innerHTML ="";
     const /**{ARray} */ videoGrid = gridInit($videoGrid);
 
