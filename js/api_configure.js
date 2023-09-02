@@ -14,7 +14,7 @@ headers.append("Authorization", API_KEY);
 const /**{Object} */ requestOptions = { headers };
 
 /**
- * 
+ * Fetch data from pexels
  * @param {string} url Fetch Url
  * @param {Function} successCallback  Success callback function
  */
@@ -26,6 +26,10 @@ const fetchData = async function (url, successCallback)
     if(response.ok){
         const /** {object} */ data = await response.json();
         successCallback(data);
+    }
+
+    else{
+        console.log("The request failed");
     }
     
 }
