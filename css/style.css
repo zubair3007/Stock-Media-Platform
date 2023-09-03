@@ -1525,6 +1525,9 @@ border-radius: var(--radius-small);
   #FAVORITE PAGE
 \*-----------------------------------*/
 
+.favorite-page .btn-group { margin-block: 16px}
+
+.favorite-page .btn-group .btn-segment { flex: 1 1 25%;}
 
 
 
