@@ -1174,6 +1174,7 @@ border-radius: var(--radius-small);
 
 .top-app-bar .logo{
   margin-inline: 4px auto;
+  margin-top: -13px;
 
 }
 
@@ -1739,7 +1740,7 @@ Responsive for larger than 1240px screen
 
 .navigation {
   --navigation-drawer-width: 360px;
-  visibility: hidden;
+  visibility: visible;
   width: var(--navigation-drawer-width);
   border-radius: 0;
 }
@@ -1754,6 +1755,8 @@ Responsive for larger than 1240px screen
 }
 
 .navigation-header .icon-btn { display: none;}
+
+/* REUSED STYLE */
 
 .main,
 .footer {margin-inline-start: 360px;}
@@ -1782,9 +1785,9 @@ Responsive for larger than 1240px screen
 
 /* PHOTO DETAIL PAGE */
 
-.detail-wrapper { height: 788;}
+.detail-wrapper { height: 700;}
 
-.detail-banner { max-height: 760px;}
+.detail-banner { max-height: 518px;}
 
 .detail .title-large{ margin-block-start: 40px;}
 

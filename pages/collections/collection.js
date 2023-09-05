@@ -48,7 +48,7 @@ let /**{Boolean} */ isLoaded = false;
 
 const loadMore = function() {
     if($loader.getBoundingClientRect().top < (window.innerHeight * 2)
-     && currentPage <= totalPage && !isLoaded) {
+     && currentPage <= totalPage && isLoaded) {
 
         currentPage++;
         loadCollections(currentPage);
